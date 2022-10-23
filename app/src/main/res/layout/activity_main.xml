@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/card_background">
+    tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/profile_card"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="25dp"
         android:background="@color/card_foreground"
         app:cardCornerRadius="25dp"
-        android:elevation="10dp">
+        android:elevation="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="60dp"
                 android:src="@drawable/avatar_9"/>
 
             <TextView
@@ -36,7 +36,7 @@
                 app:layout_constraintTop_toBottomOf="@id/profile_image"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="50dp"
                 tools:text="First Last"
                 android:textSize="24sp"
                 android:textColor="@color/black"
